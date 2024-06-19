@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231: Web Frontend Development l - Ramon Vargas</title>
+    
+    <meta name="author" content="Ramon Vargas" />
+    <meta
+      name="description"
+      content="WDD 231: Web Frontend Development l - Ramon Vargas - Bolivia"
+    >
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/base.css">
+   
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script> 
+    <script src="scripts/menu.js" defer></script> 
+</head>
+<body>
+    <header>
+        <img src="images/ram.PNG" alt="profile" width="154" height="154">
+        <h1>Ramon Vargas</h1>
+        <div id="menu"></div>
+    </header>
+    <nav>
+        <ul class="menu-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/ramón-vargas-81869177" target="_blank">LinkedIn</a></li>
+        </ul>          
+    </nav>
+    <main>
+        <section id="course-card" class="card">
+            <h2 class="card-heading">Course Work</h2>
+            <ul class="card-content">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="place-card" class="card">
+            <h2 class="card-heading">Tarija, Bolivia</h2>
+            <figure class="card-content">
+                <img src="images/goldenHouse.webp" alt="Golden" width="100" height="125">
+                <figcaption>Golden House</figcaption>
+            </figure>
+        </section>
+        <section id="certificate-card" class="card">
+            <h2 class="card-heading">Web and Computer Programming Certificate</h2>
+            <div class="card-content">
+                <button class="not-selected" id="all">All</button>
+                <button class="not-selected" id="cse">CSE</button>
+                <button class="not-selected" id="wdd">WDD</button>
+                <hr>
+                <div id="course-cards">
+
+                </div>  
+                <hr>
+                <p id="credits-title">Credits</p>
+                <span id="total-credits"></span>
+                <span id="total-completed"></span>          
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> Ramon Vargas, Bolivia
+            <!-- Optionally, a flag image -->
+        </p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
