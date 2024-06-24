@@ -1,0 +1,233 @@
+
+:root {
+    --primary-color: rgb(145, 23, 23);
+    --secondary-color: rgb(255, 255, 169);
+    --background-color: white;
+    --text-color: white;
+    --text-color-dark: black;  
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+
+#logo-link {
+    grid-column: 1/2;
+    margin: 20px;
+}
+
+#header-titles {
+    grid-column: 2/3;
+    align-self: center;
+    margin: 0;
+}
+
+#header-titles p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#header-titles h1 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: right;
+    padding: 20px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.menu-links {
+    display: none;
+    grid-column: 1/4;
+    background-color: var(--secondary-color);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-links .active {
+    text-decoration: underline;
+}
+
+.menu-links.show {
+    display: block;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.menu-links a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    
+    color: var(--text-color);
+    padding: 2rem;
+}
+
+.menu-links a:hover {
+    border: 1px solid white;
+    background-color: var(--primary-color);  
+}
+
+/* MAIN SECTION */
+
+/* Directory Page Content */
+
+  
+.directory {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+}
+  
+.content-container {
+    padding: 0 2%;
+}
+  
+.directory-buttons {
+    text-align: start;
+}
+  
+.directory-buttons button {  
+    border-radius: 6px;
+    color: var(--text-color); 
+    background-color: var(--primary-color); 
+}
+  
+.directory-buttons button:focus {
+    background-color: var(--secondary-color);
+    color: #000;
+    border: 2px #bc6c25 solid;
+}
+  
+#panel {
+    background-size: 50px 50px;
+    
+}
+
+  
+.directory-grid {
+    color: black;
+    margin-bottom: 25px;
+}
+  
+.directory-grid section h2 {
+    text-align: center;
+}
+  
+.directory-grid section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 12px;
+    background-color: var(--secondary-color);
+    border: 2px #bc6c25 solid;
+    border-radius: 3px;
+}
+  
+.directory-grid img {
+    display: none;
+}
+  
+.directory-grid section p {
+    text-align: center;
+    font-size: 16px;
+}
+  
+.directory-grid section a {
+    text-align: center;
+    font-size: 16px;
+    
+}
+  
+.directory-grid section a:hover {
+    text-align: center;
+    font-size: 16px;   
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+  
+.panelview {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.panelview section {
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    border: 2px #bc6c25 solid;
+    border-radius: 3px;
+}
+  
+.panelview img {
+    padding: 0px;
+    display: block;
+    margin: 15px auto;
+    width: 100px;
+    box-shadow: 5px 5px 10px #000000;
+    border-radius: 5px;
+}
+  
+section h4{
+    text-align: center;
+}
+
+
+/*footer*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: block;
+    font-size: .9rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 2px;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+#social {
+    text-align: center;
+}
+
+#social img {
+    padding: 5px 15px;
+    max-width: 48px;
+}
+
+#contact-info, #social, #copyright-info {
+    padding: 20px;
+    align-self: center;
+    justify-self: left;
+}
