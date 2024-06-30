@@ -93,11 +93,135 @@ header {
     background-color: var(--primary-color);  
 }
 
-/* MAIN SECTION */
+/* home */
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.hero button {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
+    text-wrap: wrap;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.hero button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.hero button:active {
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
+}
+
+
+
+#home-container, #directory-container {
+    margin: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 1.75rem;
+}
+
+#home-cards, #directory-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-card {
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.home-card h2 {
+    margin: 0;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px;
+}
+
+#home-dir-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#events p {
+    margin: 0;
+    padding: 20px;
+}
+
+#weather-icon {
+    grid-column: 1/2;
+    padding: 20px;
+    justify-self: center;
+}
+
+#current-weather-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-right: 10px;
+}
+
+
+
+#current-weather-details span {
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+#forecast-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card-label {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: .9rem;
+}
+
+/*///////////////////////////////////*/
+.spotlight {
+    display: block;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    max-width: 100%;
+    word-break: break-all; 
+    word-wrap: break-word;
+    text-align: center;
+}
+.spotlight img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
 
 /* Directory Page Content */
 
-  
 .directory {
     display: grid;
     grid-template-columns: 1fr;

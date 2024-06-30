@@ -30,6 +30,31 @@
     }
     
     /* MAIN SECTION */
+    .hero button {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+    }
+    #directory-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #home-cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    #home-dir-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .main-heading {
+        grid-column: 1/2;
+    }
+
+    
 
     /* Directory Page Content */
 
