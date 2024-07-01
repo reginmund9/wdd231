@@ -1,13 +1,13 @@
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("figcaption");
+const captionDesc = document.querySelector("#temp-desc");
 const highTemp = document.querySelector("#high");
 const lowTemp = document.querySelector("#low");
 const humidity = document.querySelector("#humidity");
 
 const mykey = "82b9407b7b6d113e077d354c4b29fe74";
-const myLat = "-21.40227954422257";
-const myLong = "-64.73662852842976";
+const myLat = "-21.521383";
+const myLong = "-64.728096";
 
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${mykey}&units=imperial`;
