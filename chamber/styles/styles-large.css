@@ -86,13 +86,21 @@
         border-radius: 5px;
     }
     
+    /* JOIN */
+    #form-container {
+        width: 600px;
+    }
+    .radio-button:hover {
+        background-color: var(--secondary-color);  
+        color: var(--text-color);
+    }
+
     /* footer */
 
     footer {
         display: flex;
         flex-direction: row;
     }
-
     footer div {
         flex: 1 1 auto;
     }
