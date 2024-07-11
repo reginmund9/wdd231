@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="author" content="Ramon Vargas">
+    <meta name="description" content="Site Plan assignment for WDD 231: Web Frontend Development 1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Plan - Ramon Vargas</title>
+    
+    <link rel="stylesheet" href="styles/site-plan.css">
+    
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
+
+    <div class="content">
+    <header>
+        <div class="header-top">
+            <span id="link-portal"><a href="../index.html">Portal</a></span>
+        </div>
+        <div class="header-bottom">
+            <h1 id="author">TexGust Site Plan</h1>
+        </div>
+    </header>
+    <main> <!-- Site Name, Site Purpose (x2), Scenarios (x3), Color Schema, Typography, Wireframe -->
+
+        <div id="site-name">
+            <h2 class="box-title">Site Name</h2>
+            <div class="box-content">
+                <h3>TexGust</h3>
+                <p>
+                    All companies, schools, and any organization that wants a logo or custom design on their clothing, 
+                    but sometimes people don’t know what option could fit to their needs and budget. Through a 
+                    dynamic website, a customer will find information regarding some printing methods on clothes. Also, 
+                    pictures of the different printing methods on several types of clothes. 
+                </p>
+            </div>
+        </div>
+        
+        <div id="site-purpose">
+            <h2 class="box-title">Site Purpose</h2>
+            <div class="box-content">
+                <p>
+                    The purpose of this website is to develop a user-friendly site that provides users 
+                    relevant information related to printing methods on clothes. Also, this 
+                    website will show tendencies and real designs according the printing method. Through 
+                    an intuitive interface, people will be able to decide the best option in an easy and quickly way.
+                </p>
+                
+            </div>
+        </div>
+
+        <div id="scenarios">
+            <h2 class="box-title">Scenarios</h2>
+            <div class="box-content">
+                <p>What types of fabric do you offer for hoodies and tank tops, and which would you recommend for workout apparel?</p>
+                <p>Can I submit my own design for printing, or do you have templates available?</p>
+                <p>How long does it typically take to fulfill large orders like ours?</p>
+                <p>How do you ensure that the printed designs withstand frequent washing and intense physical activity?</p>
+            </div>
+        </div>
+
+        <div id="color-schema">
+            <h2 class="box-title">Color Schema</h2>
+            <div class="box-content">
+                <span id="color-primary">#C44018</span>
+                <p>The primary color which will be featured on each page's header or footer.</p>
+                <span id="color-secondary">#F1C84C</span>
+                <p>The secondary color which will be featured on each page's header or footer.</p>
+                <span id="color-accent-1">#4F86C6</span>
+                <p>This color will be used on titles and text on the body.</p>
+                <span id="color-accent-2">#ffffff</span>
+                <p>This accent color is a gray which will be an alternative.</p>
+            </div>
+        </div>
+
+        <div id="typography">
+            <h2 class="box-title">Typography</h2>
+            <div class="box-content">
+                <h3>Heading Font</h3>
+                <h4 id="font-header">PlayFair Display</h4>
+                <h3>Paragraph Font</h3>
+                <h4 id="font-paragraph">DM Sans</h4>
+
+                <div class="box-sub">
+                    <h3 class="ex-header">Example Text</h3>
+                    <p class="ex-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. Aenean massa. 
+                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                        Nulla consequat massa quis enim.</p>
+
+                    </div>
+            </div>
+        </div>
+
+        <div id="wireframe">
+            <h2 class="box-title">Wireframe</h2>
+            <div id="wireframe-boxes" class="box-content">
+                <div>
+                    <h3>Mobile View Wireframe</h3>
+                    <img src="images/smallscreen.png" alt="Website Mobile Wireframe" width="360" height="600">
+                </div>
+                <div>
+                    <h3>Desktop Wireframe</h3>
+                    <img src="images/largescreen.png" alt="Website Mobile Wireframe" width="960" height="595">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    </div>
+    <footer class="footer">
+        <p>
+            &copy; <span id="currentYear"></span> | Ramon Vargas | Bolivia
+            <!-- Optionally, a flag image -->
+          </p>
+          <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+    </script>
+</body>
+</html>
