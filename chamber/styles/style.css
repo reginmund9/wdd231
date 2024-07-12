@@ -1,5 +1,4 @@
 
-
 :root {
     --primary-color: rgb(145, 23, 23);
     --secondary-color: rgb(255, 255, 169);
@@ -395,7 +394,6 @@ section h4{
 #submit-button {
     background-color: var(--secondary-color);
     color: var(--text-color-dark);
-    font-family: var(--font-family-serif);
     text-wrap: wrap;  
     height: 60px;
     text-align: center;
@@ -484,7 +482,6 @@ section h4{
     font-weight: bold;
     text-align: center;
     font-size: 1.25rem;
-    font-family: var(--font-family-serif);
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: 20px;
@@ -499,7 +496,6 @@ section h4{
     font-size: 1.25rem;
     font-weight: bold;
     color: var(--text-color);
-    font-family: var(--font-family-serif);
     padding: 10px 15px;
     position: absolute;
     top: 10px;
