@@ -57,9 +57,6 @@
     
 
     /* Directory Page Content */
-
-   
-
     .directory-grid section {
         grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
     }
@@ -94,6 +91,29 @@
         background-color: var(--secondary-color);  
         color: var(--text-color);
     }
+
+    /* Discover Page Content */
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        
+    }
+    
+    .discover-box {
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .sidebar {
+        grid-column: 2/3;
+        grid-row: 1/7;
+        margin-bottom: 60px;
+        margin-right: 35px;  
+        background-color: var(--secondary-color); 
+        margin-top: 35px;  
+    }
+
 
     /* footer */
 
