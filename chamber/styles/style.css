@@ -1,5 +1,5 @@
 
-@import url('https://fonts.google.com/share?selection.family=Kaushan+Script');
+
 :root {
     --primary-color: rgb(145, 23, 23);
     --secondary-color: rgb(255, 255, 169);
@@ -578,7 +578,6 @@ section h4{
 }  
 #welcome {
     text-align: center;
-    font-family: 'Kaushan Script', cursive;;
     font-size: 1.5rem;
     color: rgb(255, 24, 24);
 }
