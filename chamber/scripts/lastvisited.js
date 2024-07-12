@@ -1,30 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the current date
-    var currentDate = new Date();
-    // Get the last visit date from localStorage
-    var lastVisitDate = localStorage.getItem("lastVisitDate");
-    // If this is the first visit
-    if (!lastVisitDate) {
-        // Display a welcome message
-        document.getElementById("sidebar-content").innerHTML = "Welcome! Let us know if you have any questions.";
-    } else {
-        // Convert last visit date to a Date object
-        lastVisitDate = new Date(lastVisitDate);
-        // Calculate the difference in milliseconds between current visit and last visit
-        var timeDifference = currentDate.getTime() - lastVisitDate.getTime();
-        // Calculate the difference in days
-        var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        // Display different messages based on the time difference
-        if (daysDifference === 0) {
-            document.getElementById("sidebar-content").innerHTML = "Back so soon! Awesome!";
-        } else {
-            if (daysDifference === 1) {
-                document.getElementById("sidebar-content").innerHTML = "You last visited 1 day ago.";
-            } else {
-                document.getElementById("sidebar-content").innerHTML = "You last visited " + daysDifference + " days ago.";
-            }
-        }
+document.addEventListener('DOMContentLoaded', (event) => {
+    displayWelcome();
+})
+
+function displayWelcome() {
+    const message = document.querySelector('#user-visit-msg');
+    let prevVisit = localStorage.getItem('visitDate' || null); // if first visit then return -1
+    let curVisit = Date.now();
+    const dayInMillis = 24 * 60 * 60 * 1000; // # of milliseconds that make up one day
+    
+    prevVisit = Number(prevVisit);
+    curVisit = Number(curVisit);
+   
+    localStorage.setItem('visitDate', curVisit);
+
+    if (prevVisit === 0) {
+        message.innerHTML = "Let us know if you have any questions.";
     }
-    // Store the current visit date in localStorage
-    localStorage.setItem("lastVisitDate", currentDate);
-});
+    else if (curVisit - prevVisit < dayInMillis) {
+        message.innerHTML = "Wonderful to see you back so soon!";
+    } else { 
+        // set the times to 0 so that the dates are counted based on days and not times
+        prevVisit = new Date(prevVisit).setHours(0,0,0,0); 
+        curVisit = new Date(curVisit).setHours(0,0,0,0);
+        
+        const diff = Math.abs(curVisit - prevVisit)
+        const diffInDays = Math.trunc(diff / dayInMillis);
+
+        message.innerHTML = `Your last visit was ${diffInDays} ago.`;
+    }
+}

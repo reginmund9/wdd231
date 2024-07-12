@@ -1,4 +1,5 @@
 
+@import url('https://fonts.google.com/share?selection.family=Kaushan+Script');
 :root {
     --primary-color: rgb(145, 23, 23);
     --secondary-color: rgb(255, 255, 169);
@@ -572,16 +573,18 @@ section h4{
     grid-column: 2/3; grid-row: 2/3;
     
 }
-
 .spot-grid a {
     grid-column: 2/3; grid-row: 3/4;
 }  
-
+#welcome {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;;
+    font-size: 1.5rem;
+    color: rgb(255, 24, 24);
+}
 .discover-grid {
     display: block;  
 }
-
-
 
 .discover-box .box-title {
     min-width: 200px;
@@ -602,7 +605,7 @@ section h4{
     transition: 0.5s;
     transform: scale(1.02, 1.02);
     border-radius: 6px;
-    box-shadow: 0px 2px 5px 0px var(--shadow);
+    box-shadow: 0px 2px 5px 0px var(--primary-color);
 }
 
 .discover-grid img:active {
@@ -618,6 +621,8 @@ figure img {
     0% {opacity: 0;}
     100% {opacity: 20;}
 }
+
+
 
 /*footer//////////////////////////////////////////////////////*/
 footer {
