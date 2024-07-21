@@ -18,21 +18,21 @@
         "name": "Casual wear",
         "name_add": "",
         "goal": "Moments of Relax",
-        "logo": "images/bus/casual1.jpg",
+        "logo": "images/bus/casual1.webp",
         "mem_lvl": "Silver"
     },
     {
         "name": "Casual wear",
         "name_add": "",
         "goal": "Moments of Relax",
-        "logo": "images/bus/casual2.png",
+        "logo": "images/bus/casual2.webp",
         "mem_lvl": "Silver"
     },
     {
         "name": "Formal wear",
         "name_add": "",
         "goal": "Special Moments",
-        "logo": "images/bus/formal5.jpg",
+        "logo": "images/bus/formal5.webp",
         "mem_lvl": "Silver"
     },
     {
@@ -53,7 +53,7 @@
         "name": "Sports wear",
         "name_add": "",
         "goal": "Great Memories",
-        "logo": "images/bus/sport2.jpg",
+        "logo": "images/bus/sport2.webp",
         "mem_lvl": "Silver"
     },
     {
