@@ -1,0 +1,68 @@
+{
+    "businesses": [
+    {
+        "name": "Workwear",
+        "name_add": "",
+        "goal": "Build your Indentity",
+        "logo": "images/bus/workwear1.webp",
+        "mem_lvl": "Gold"
+    },
+    {
+        "name": "Workwear",
+        "name_add": "",
+        "goal": "Build your Indentity",
+        "logo": "images/bus/works.webp",
+        "mem_lvl": "Bronze"
+    },
+    {
+        "name": "Casual wear",
+        "name_add": "",
+        "goal": "Moments of Relax",
+        "logo": "images/bus/casual1.jpg",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Casual wear",
+        "name_add": "",
+        "goal": "Moments of Relax",
+        "logo": "images/bus/casual2.png",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Formal wear",
+        "name_add": "",
+        "goal": "Special Moments",
+        "logo": "images/bus/formal5.jpg",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Formal wear",
+        "name_add": "",
+        "goal": "Special Moments",
+        "logo": "images/bus/formal4.webp",
+        "mem_lvl": "Bronze"
+    },
+    {
+        "name": "Sports wear",
+        "name_add": "",
+        "goal": "Great Memories",
+        "logo": "images/bus/sport3.webp",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Sports wear",
+        "name_add": "",
+        "goal": "Great Memories",
+        "logo": "images/bus/sport2.jpg",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Accessories",
+        "name_add": "",
+        "goal": "Having fun with friends!",
+        "logo": "images/bus/acce1.webp",
+        "mem_lvl": "Gold"
+    }
+    ]
+}
+
